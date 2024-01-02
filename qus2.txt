@@ -1,0 +1,19 @@
+class Circle {
+  constructor(
+      radius,color,
+  ) {
+      this.radius = radius;
+      this.color = color;
+    }
+    circumference() {
+        let r = this.radius;
+        console.log("Circumference of the circle of radius ",r," is",(2* Math.PI *r).toFixed(2));
+    }
+    area() {
+        let r = this.radius;
+        console.log("Area of circle of radius ",r," is",r*r);
+    }
+}
+const c1 = new Circle(12, "red");
+c1.circumference();
+c1.area();

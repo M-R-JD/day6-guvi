@@ -1,0 +1,24 @@
+class UberPrice {
+  constructor(rateperkm=20,distance,timing) {
+      this.rateperkm = rateperkm;
+      this.distance = distance;
+      this.timing = timing;
+    }
+    price() {
+        if (this.timing == "day") {
+            console.log("10 percen discount from normal price");
+            let p = this.rateperkm * this.distance;
+            let finalprice = p - (p / 10);
+            console.log("Final Uberprice is ", finalprice);
+        } else {
+            console.log("50 percen discount from normal price");
+            let p = this.rateperkm * this.distance;
+            let finalprice = p - (p / 2);
+            console.log("Final Uberprice is ", finalprice);
+        }
+    }
+}
+const person1 = new UberPrice(25, 40, "night");
+const person2 = new UberPrice(45, 20, "day");
+person1.price();
+person2.price();

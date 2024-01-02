@@ -1,0 +1,24 @@
+class Movie {
+  constructor(title, studio, rating = "PG") {
+    this.title = title;
+    this.studio = studio;
+    this.rating = rating;
+    }
+    getPg(){
+        if (this.rating !== "PG") {
+            arr[i] = this.title;
+            i++;
+        }
+    }
+}
+const movie1 = new Movie("Casino Royale", "Eon Productions", "PG13");
+const movie2 = new Movie("Casino", "Pn Productions");
+const movie3 = new Movie("Casinale", "En Productions", "PG13");
+const movie4 = new Movie("Royale", "Eo Productions");
+let arr = [];
+let i = 0;
+movie1.getPg();
+movie2.getPg();
+movie3.getPg();
+movie4.getPg();
+console.log(arr);

@@ -1,0 +1,37 @@
+class Person {
+  constructor(
+    myname,
+    gender,
+    age,
+      nationality,
+      educationalQualification,
+    skills,
+      profession,
+      languageKnown,
+    mail_Id,
+      mobile_no,
+  ) {
+    this.name = myname;
+    this.gender = gender;
+    this.age = age;
+      this.nationality = nationality;
+      this.educationalQualification = educationalQualification;
+      this.skills = skills;
+      this.profession = profession;
+      this.languageKnown = languageKnown;
+    this.mail_Id = mail_Id;
+    this.mobile_number = mobile_no;
+  }
+}
+const person1 = new Person(
+  "M.RATHINA JAYA DEEPA",
+  "Female",
+  "23","Indian",
+  "B.E",
+  "Basics of Webdevelopement",
+  "Student",
+  "Tamil, English",
+  "sivadeepa@305",
+  "6369____45"
+);
+console.log(person1);
